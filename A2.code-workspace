@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"antlr4.debug": {
+			"visualParseTreeHorizontal": true,
+			"visualParseTreeClustered": false
+		},
+		"antlr4.generation": {
+			"outputDir": "C:/Users/Anas_/OneDrive/school/ST/CT/A2/generated",
+			"mode": "external",
+			"language": "Java",
+			"listeners": true,
+			"visitors": true
+		},
+		"launch": {
+			"configurations": [
+				{
+					"type": "antlr-debug",
+					"request": "launch",
+					"name": "Debug PlusMult",
+					"grammar": "C:/Users/Anas_/OneDrive/school/ST/CT/A2/OFP.g4",
+					"input": "C:/Users/Anas_/OneDrive/school/ST/CT/A2/input.txt",
+					"visualParseTree": true
+
+				}
+			]
+		},
+		"java.project.referencedLibraries": [
+			"C:/Users/Anas_/OneDrive/school/ST/CT/antlr-4.8-complete.jar"
+		],
+
+	}
+}
