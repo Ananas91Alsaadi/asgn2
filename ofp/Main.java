@@ -24,13 +24,13 @@ import generated.OFPParser;
 public class Main  {
 
     public static void main(String[] args)  {
-			System.out.println("Hello world");
+			/*System.out.println("Hello world");
 
             PrintListener listner = new PrintListener();
            listner.enter();
 
            OFPBaseListener listnerOFP = new OFPBaseListener();
-           listnerOFP.enterProg(null);
+           listnerOFP.enterProg(null);*/
 
          
 
@@ -68,11 +68,19 @@ public class Main  {
 }
 
 
- class PrintListener extends OFPBaseListener {
+ /*class PrintListener extends OFPBaseListener {
 
     public void enter(){
 			System.out.println("Hellooooooooooooooooo world");
     };
  
-}
+}*/
 
+/* 
+public class CustomListener extends OFPBaseListener {
+    private Scope globalScope = new Scope(null, "global"); // Initialize the global scope
+    private Scope currentScope = globalScope; // Initialize the current scope
+
+   
+}
+*/
