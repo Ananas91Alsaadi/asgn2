@@ -81,6 +81,5 @@ public class CustomListener extends OFPBaseListener {
     private Scope globalScope = new Scope(null, "global"); // Initialize the global scope
     private Scope currentScope = globalScope; // Initialize the current scope
 
-   
 }
 */
