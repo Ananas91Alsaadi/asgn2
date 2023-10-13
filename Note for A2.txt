@@ -1,0 +1,5 @@
+In the initial part of the assignment, we referred to Lecture 4 for guidance. However, we encountered some challenges in grasping the precise approach for verifying correctness in our code. We are eager to gain a more comprehensive understanding of this aspect.
+
+As for the subsequent part of the assignment, we have found it somewhat ambiguous, and we're unsure of the best way to initiate the process. Unfortunately, we haven't come across a clear explanation within the lecture material on how to carry out error checks for this particular phase. We are hopeful that the upcoming lectures will provide further insights and guidance regarding error checking in our compiler.
+
+Anas Alsaadi & Devika Raj

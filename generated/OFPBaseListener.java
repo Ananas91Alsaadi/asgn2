@@ -18,9 +18,7 @@ public class OFPBaseListener implements OFPListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterProg(OFPParser.ProgContext ctx) {
-		//System.out.println("'works here'");
-	 }
+	@Override public void enterProg(OFPParser.ProgContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

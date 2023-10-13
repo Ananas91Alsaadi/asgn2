@@ -8,6 +8,8 @@ public class Scope {
 	private String type;
 	private int next = 0; // visit next child
 
+
+    
 private Scope enclosingScope; // null if global (outermost) scope
 
 private Map<String, Symbol> symbols = new LinkedHashMap<String, Symbol>();

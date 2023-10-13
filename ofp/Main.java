@@ -13,6 +13,7 @@ import org.antlr.v4.runtime.BufferedTokenStream;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CharStreams;
 import org.antlr.v4.runtime.ParserRuleContext;
+import org.antlr.v4.runtime.tree.ParseTreeWalker;
 import org.antlr.v4.gui.Trees;
 
 import generated.OFPBaseListener;
@@ -20,23 +21,21 @@ import generated.OFPLexer;
 import generated.OFPParser;
 
 
-
 public class Main  {
 
     public static void main(String[] args)  {
-			/*System.out.println("Hello world");
 
-            PrintListener listner = new PrintListener();
-           listner.enter();
+           System.out.println("heloooo");
+           
+           //
 
-           OFPBaseListener listnerOFP = new OFPBaseListener();
-           listnerOFP.enterProg(null);*/
+
 
          
 
         // Select test program
         String testDir = "C:/Users/Anas_/OneDrive/school/ST/CT/A2/ofp_examples/";
-        String testProgram = testDir + "arithmetics.ofp";
+        String testProgram = testDir + "max.ofp";
         
         // Check if input ends with ".ofp"
         if ( !testProgram.endsWith(".ofp") ) {
@@ -61,7 +60,15 @@ public class Main  {
 
         // Display tree
         Trees.inspect(root, parser);
-        
+       
+
+           ParseTreeWalker walker = new ParseTreeWalker();
+           PrintListener printListener = new PrintListener();
+           walker.walk(printListener, root);
+
+           SymbolTableListener SymbolTableListener= new SymbolTableListener();
+           SymbolTableListener.enterProg(null);
+
     }
 
 
